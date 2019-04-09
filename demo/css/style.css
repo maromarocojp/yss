@@ -1,0 +1,102 @@
+@charset "UTF-8"; 
+
+html, body, header, footer, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, legend, caption, tbody, tfoot, thead, input, textarea, label, select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  padding:10px;
+}
+
+.yss_open,
+.yss_close{
+  width:180px;
+  margin:0 0 10px;
+  padding:10px;
+  color:#fff;
+  line-height:1;
+  background:#000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor:pointer;
+}
+
+.yss_content{
+  padding:10px;
+  background:#f0f0f0;
+}
+
+.yss_content[data-yss="number4"]{
+  width:70%;
+}
+
+/* ハンバーガーエフェクト */
+.yss_hamburger{
+  margin:0;
+  width: 48px;
+  height: 48px;
+  padding:12px 10px;
+  background:#ccc;
+  position:fixed;
+  top:10px;
+  right:10px;
+  z-index:1000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor:pointer;
+}
+.yss_hamburger div,
+.yss_hamburger div span {
+  display: inline-block;
+  transition: all .25s;
+  box-sizing: border-box;
+}
+.yss_hamburger div{
+  width:100%;
+  height:100%;
+  display:block;
+  position: relative;
+}
+.yss_hamburger span {
+  margin:auto;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.yss_hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.yss_hamburger span:nth-of-type(2) {
+  top:0;
+  bottom:0;
+}
+.yss_hamburger span:nth-of-type(3) {
+  bottom: 0;
+}
+.yss_hamburger.yss_active span:nth-of-type(1) {
+  -webkit-transform: translateY(11px) rotate(-45deg);
+  transform: translateY(11px) rotate(-45deg);
+}
+.yss_hamburger.yss_active span:nth-of-type(2) {
+  opacity: 0;
+}
+.yss_hamburger.yss_active span:nth-of-type(3) {
+  -webkit-transform: translateY(-11px) rotate(45deg);
+  transform: translateY(-11px) rotate(45deg);
+}
+

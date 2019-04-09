@@ -1,0 +1,13 @@
+.yss_content{
+  position:fixed;
+  width:100%;
+  top:0;
+  right:-100%;
+  z-index:999;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.yss_content.yss_left{
+  right:auto;
+  left:-100%;
+}
